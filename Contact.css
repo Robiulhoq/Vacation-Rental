@@ -1,0 +1,161 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: aliceblue;
+}
+.contact_header{
+    width: 100%;
+    height: 60vh;
+    background: url('./images/contact_header.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 1000px rgba(202, 136, 136, 0.842);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact_header> h1{
+    color: white;
+    font-size: 60px;
+}
+/* map section start */
+.map_section{
+    margin: 3rem;
+}
+.map_container{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+}
+
+.map_container>img{
+    height: 80vh;
+    width: 70%;
+}
+.map_contant{
+    height: 60vh;
+    padding: 3rem;
+    width: 30%;
+    
+}
+.map_contant> h1, button{
+    margin-top: 1rem;
+}
+.map_contant_info{
+    margin-top: 1rem;
+}
+.map_contant> h1{
+    font-weight: bold;
+    font-size: 2rem;
+}
+.appointment_button{
+    height: 2.7rem;
+    width: auto;
+    margin-right: 10px;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #FD7792;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .map_section{
+        margin: 3rem 1rem 1rem 1rem;
+    }
+    .map_container{
+        flex-direction: column;
+    }
+    .map_container>img{
+        width: 100%;
+    }
+    .map_contant{
+        width: 100%;
+    }
+}
+
+.contact_section{
+    margin: -3rem 3rem 0rem 3rem;
+    /* background-color: white; */
+}
+.contact_form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+}
+.contact{
+    padding: 2rem;
+}
+.contact_title{
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+.alart_massage{
+    margin-bottom: 1rem;
+}
+.input_title{
+    font-weight: bold;
+    font-size: 14px;
+    margin: 1rem 0rem;
+}
+.contact> input{
+    width: 50rem;
+    height: 3rem;
+    margin: 0.5rem 0rem;
+    font-size: 1xrem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(218, 218, 218);
+}
+
+.location_info{
+    background-color: #FD7792;
+    width: 30%;
+    padding: 2rem;
+    color: white;
+}
+.location_info> p{
+    margin-top: 1.5rem;
+}
+.location_info> p> i{
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 50%;
+    padding: 1rem;
+    border: 2px solid rgb(216, 216, 216);
+    margin-right: 10px;
+}
+@media screen and (max-width: 768px) {
+    .contact_section{
+        margin: 2rem 1rem 1rem 1rem;
+    }
+    .contact_form{
+        flex-direction: column;
+    }
+    .contact>input{
+        width: 100%;
+    }
+    .location_info{
+        width: 100%;
+    }
+}

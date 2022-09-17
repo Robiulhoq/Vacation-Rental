@@ -1,0 +1,63 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.about_header{
+    width: 100%;
+    height: 60vh;
+    background: url('./images/about_us.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(122, 122, 122, 0.842);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.about_header> h1{
+    color: white;
+    font-size: 60px;
+}
+
+.about_header> i{
+    padding-top: 20px;
+    font-size: 4rem;
+    color: white;
+}
+
+.about_container{
+    margin: 4rem 8rem 4rem 9rem;
+}
+.about_text{
+    color: rgb(126, 126, 126);
+    text-align: justify;
+    line-height: 25px;
+}
+.text_underline{
+    height: 2px;
+    width: 100%;
+    background-color: rgb(100, 100, 100);
+    padding: 10px 0px;
+    margin: 15px 0px;
+}
+@media screen and (max-width: 768px) {
+    .about_container{
+        margin: 4rem 1rem;
+    }
+}
